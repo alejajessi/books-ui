@@ -11,6 +11,6 @@ export class BooksService {
   constructor(private http: HttpClient) { }
 
   getBooks(): Observable<IBook[]> {
-    return this.http.get<IBook[]>('hhttps://book-icesi.herokuapp.com//books');
+    return this.http.get<IBook[]>('https://books-back-jess.herokuapp.com/books');
   }
 }
